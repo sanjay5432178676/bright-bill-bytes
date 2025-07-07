@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,22 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				electric: {
+					blue: '#00D4FF',
+					purple: '#8B5CF6',
+					pink: '#EC4899',
+					green: '#10B981',
+					yellow: '#F59E0B',
+					orange: '#F97316'
 				}
+			},
+			backgroundImage: {
+				'gradient-electric': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+				'gradient-energy': 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+				'gradient-power': 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+				'gradient-bill': 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
+				'gradient-glass': 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +100,29 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-slow': {
+					'0%, 100%': {
+						opacity: '1'
+					},
+					'50%': {
+						opacity: '0.7'
+					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0px)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-slow': 'pulse-slow 3s ease-in-out infinite',
+				'float': 'float 6s ease-in-out infinite'
 			}
 		}
 	},
